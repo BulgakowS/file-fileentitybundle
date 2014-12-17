@@ -49,11 +49,11 @@ Demo\BackendBundle\Entity\Demo:
         image_first:
             type: string
             length: 255
-            nullabel: true
+            nullable: true
         image_second:
             type: string
             length: 255
-            nullabel: true
+            nullable: true
             
     lifecycleCallbacks:
         prePersist: [upload]
