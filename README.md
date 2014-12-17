@@ -15,7 +15,7 @@ Pretty simple with [Composer](http://packagist.org), add:
 }
 ```
 
-### Add PaginatorBundle to your application kernel
+### Add FileEntityBundle to your application kernel
 
 ```php
 // app/AppKernel.php
