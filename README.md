@@ -214,6 +214,33 @@ class Demo extends FileEntity
 }
 ```
 
+### Form
+```php
+class DemoType extends AbstractType
+{
+    /**
+     * @param FormBuilderInterface $builder
+     * @param array $options
+     */
+    public function buildForm(FormBuilderInterface $builder, array $options)
+    {
+        $builder
+            ->add('name')
+            ->add('image_first', 'file', array(
+                'required' => false, 
+                'data_class' => null
+            ))
+            ->add('image_second', 'file', array(
+                'required' => false, 
+                'data_class' => null
+            ))
+        ;
+    }
+
+    //.......
+}
+```
+
 ### View
 
 ```jinja
