@@ -31,14 +31,6 @@ public function registerBundles()
 
 ## Usage examples:
 
-### Entity
-```php
-namespace Demo\BackendBundle\Entity;
-
-use Doctrine\ORM\Mapping as ORM;
-use Brainx2\File\FileEntityBundle\Entity\FileEntity as FileEntity;
-
-
 ### ORM.yml
 
 ```yaml
@@ -68,6 +60,14 @@ Demo\BackendBundle\Entity\Demo:
         preUpdate: [upload]
         preRemove: [remove]
 ```
+
+### Entity
+```php
+namespace Demo\BackendBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+use Brainx2\File\FileEntityBundle\Entity\FileEntity as FileEntity;
+
 
 /**
  * Demo
