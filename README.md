@@ -13,6 +13,7 @@ Pretty simple with [Composer](http://packagist.org), add:
         "brainx2/file-fileentitybundle": "1.0.0.*@dev"
     }
 }
+```
 
 ### Add PaginatorBundle to your application kernel
 
@@ -211,7 +212,6 @@ class Demo extends FileEntity
         return '/uploads/files';
     } 
 }
-
 ```
 
 ### View
