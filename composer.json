@@ -1,0 +1,24 @@
+{ 
+  "name" : "brainx2/file-fileentitybundle", 
+  "description" : "", 
+  "type" : "symfony-bundle", 
+  "authors" : [{ 
+    "name" : "joker", 
+    "email" : "emchenkoivan@gmail.com" 
+  }], 
+  "keywords" : [ "file entity", "file upload" ], 
+  "license" : [ "MIT" ], 
+  "require" : { }, 
+  "autoload" : { 
+    "psr-0" : { 
+      "Brainx2\\File\\FileEntityBundle" : "" 
+    } 
+  }, 
+  "target-dir" : "Brainx2/File/FileEntityBundle", 
+  "repositories" : [{ }], 
+  "extra" : { 
+    "branch-alias" : { 
+      "dev-master" : "1.0.0" 
+    } 
+  } 
+}

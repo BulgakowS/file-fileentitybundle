@@ -1,0 +1,3 @@
+brainx2_file_file_entity_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: Brainx2FileFileEntityBundle:Default:index }

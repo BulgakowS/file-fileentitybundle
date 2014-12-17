@@ -1,0 +1,4 @@
+services:
+#    brainx2_file_file_entity.example:
+#        class: Brainx2\File\FileEntityBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
