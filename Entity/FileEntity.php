@@ -47,7 +47,7 @@ abstract class FileEntity {
     public function upload()
     {
         foreach($this->files as $field=>$file) {
-            $fileName = time() . '_' . $this->{$field}->getClientOriginalName();
+            $fileName = time() . '_' . md5($this->{$field}->getClientOriginalName()) . '.' . $this->{$field}->getClientOriginalExtension();
             
             $this->{$field}->move(
                 $this->getUploadRootDir(),
@@ -113,7 +113,7 @@ abstract class FileEntity {
      */
     protected function getUploadRootDir()
     {
-        return __DIR__.'/../../../../../web/'.$this->getUploadDir();
+        return getcwd() . $this->getUploadDir();
     }
     
     /**
