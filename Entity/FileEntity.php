@@ -47,8 +47,7 @@ abstract class FileEntity {
     public function upload()
     {
         foreach($this->files as $field=>$file) {
-            $fileName = time() . '_' . md5($this->{$field}->getClientOriginalName()) . '.' . $this->{$field}->getClientOriginalExtension();
-            
+            $fileName = time() . '_' . str_replace(' ', '_', $this->{$field}->getClientOriginalName());
             $this->{$field}->move(
                 $this->getUploadRootDir(),
                 $fileName
